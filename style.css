@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+fieldset {
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+table, td, tr {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px black solid;
+}
+
+td {
+    padding: 10px;
+}
