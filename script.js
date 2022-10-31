@@ -85,10 +85,10 @@ form.addEventListener(`submit`, async evt => {
         try {
             let heroes = await controller(API + `/heroes`);
             let heroExist = heroes.find(hero => heroAdd.name === hero.name);
-            if (!heroExist) {
+            if (!heroExist && heroAdd.name !== ``) {
                 let putHero = await controller(API + `/heroes`, `POST`, heroAdd);
                 location.reload()
-            } else return alert(`Hero exists!`);
+            } else return alert(`Hero exists! or empty string`);
         } catch (err) {
             console.log(err);
         }
