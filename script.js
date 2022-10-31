@@ -77,7 +77,7 @@ function tableCreate(hero) {
 form.addEventListener(`submit`, async evt => {
     evt.preventDefault();
     let heroAdd = {
-        name: heroName.value,
+        name: heroName.value.trim(),
         comics: selectUniverse.value,
         favourite: favouriteCheck.checked,
     }
